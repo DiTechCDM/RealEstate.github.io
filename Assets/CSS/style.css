@@ -1738,3 +1738,9 @@ footer {
         margin-top: -3.50rem;
     }
 }
+
+@media screen and (max-width: 538px) {
+    .title-config{
+        font-size: calc(16pt + 0.15vw);
+    }
+}
