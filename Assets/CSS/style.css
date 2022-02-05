@@ -1060,7 +1060,7 @@ figure:hover img {
 
 /* location advantage component starts here */
 #location_advantage {
-    padding: 0px 0px 60px 0px;
+    padding: 60px 0px 60px 0px;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../Images/feature-bg-1.jpg');
@@ -1557,3 +1557,184 @@ footer {
 }
 
 /* footer component ends here */
+
+/* project configuration component starts here */
+#project_configuration {
+    background-image: url('https://themexriver.com/houseland-demo/main/wp-content/themes/houseland/assets/images/home3/building-shape.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 0px 0px 60px 0px;
+}
+
+.title-config {
+    font-family: 'AbrilFatFace';
+    font-size: calc(20pt + 0.15vw);
+    text-align: center;
+    margin-bottom: 3em;
+    letter-spacing: 0.03em;
+}
+
+.title-config span {
+    border-bottom: 2px solid #004f83;
+    padding-bottom: 4px;
+    color: #004f83;
+}
+
+.grid-configuration-row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 4em 1fr 4em 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4em;
+}
+
+.grid-configuration-row>div {
+    height: auto;
+}
+
+.top-header>h3 {
+    font-family: 'AbrilFatFace';
+    font-size: calc(20pt + 0.15vw);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: white;
+}
+
+.top-header {
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.grid-configuration-row>div:nth-child(2) .top-header {
+    position: relative;
+    top: -2rem;
+    background-color: #004f83;
+}
+
+.grid-configuration-row>div:nth-child(1) .top-header {
+    background-color: #f76244;
+}
+
+.grid-configuration-row>div:nth-child(3) .top-header {
+    background-color: #f76244;
+}
+
+.project-text-config {
+    background-color: white;
+    background-image: url('../Images/pattern-6.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    -webkit-box-shadow: 0px 10px 50px 0px rgb(26 46 85 / 10%);
+    box-shadow: 0px 10px 50px 0px rgb(26 46 85 / 10%);
+    padding: 15px 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.8;
+}
+
+.grid-configuration-col:nth-child(2) .project-text-config {
+    position: relative;
+    top: -2rem;
+    border-bottom: 3px solid #004f83;
+}
+
+.grid-configuration-col:nth-child(1) .project-text-config {
+    border-bottom: 3px solid #f76244;
+}
+
+.grid-configuration-col:nth-child(3) .project-text-config {
+    border-bottom: 3px solid #f76244;
+}
+
+.project-text-config>p {
+    font-family: 'trebuc_Regular';
+    letter-spacing: 0.03em;
+    line-height: 1.3195;
+    font-size: calc(12pt + 0.15vw);
+}
+
+.project-text-config>ul li {
+    font-family: 'trebuc_Regular';
+    letter-spacing: 0.03em;
+    line-height: 1.3195;
+    font-size: calc(10pt + 0.15vw);
+    margin-top: 0.80em;
+}
+
+.centering-triangle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #f76244;
+}
+
+#triangle-up-1 {
+    width: 0;
+    height: 0;
+    position: relative;
+    top: -28px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #004f83;
+}
+
+#triangle-up-2 {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #f76244;
+}
+
+.project-text-config ul li {
+    list-style-image: url('../Images/Icons/Webp.net-resizeimage (1).png');
+}
+
+.grid-configuration-col {
+    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+}
+
+
+.grid-configuration-col:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+
+@media screen and (max-width: 992px) {
+    .grid-configuration-row {
+        -ms-grid-columns: 1fr 4em 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .grid-configuration-row {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-configuration-col:nth-child(3) {
+        margin-top: -3.50rem;
+    }
+}
